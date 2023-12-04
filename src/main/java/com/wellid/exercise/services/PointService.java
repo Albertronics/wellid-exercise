@@ -1,6 +1,6 @@
 package com.wellid.exercise.services;
 
-import com.wellid.exercise.common.PaginationPayload;
+import com.wellid.exercise.models.PaginationPayload;
 import com.wellid.exercise.entities.PointEntity;
 import com.wellid.exercise.inputs.PointInput;
 import com.wellid.exercise.repositories.PointRepository;

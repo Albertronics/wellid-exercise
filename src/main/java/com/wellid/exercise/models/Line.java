@@ -1,6 +1,5 @@
 package com.wellid.exercise.models;
 
-import com.wellid.exercise.common.Fraction;
 import lombok.Getter;
 import lombok.Setter;
 

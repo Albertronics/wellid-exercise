@@ -1,4 +1,4 @@
-package com.wellid.exercise.common;
+package com.wellid.exercise.models;
 
 import lombok.Getter;
 import lombok.Setter;

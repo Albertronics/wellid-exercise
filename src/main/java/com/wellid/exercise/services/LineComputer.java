@@ -1,6 +1,6 @@
 package com.wellid.exercise.services;
 
-import com.wellid.exercise.common.Fraction;
+import com.wellid.exercise.models.Fraction;
 import com.wellid.exercise.models.Line;
 import com.wellid.exercise.entities.PointEntity;
 import com.wellid.exercise.repositories.PointRepository;

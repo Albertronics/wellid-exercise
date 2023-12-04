@@ -1,6 +1,6 @@
 package com.wellid.exercise.controllers;
 
-import com.wellid.exercise.common.PaginationPayload;
+import com.wellid.exercise.models.PaginationPayload;
 import com.wellid.exercise.entities.PointEntity;
 import com.wellid.exercise.exceptions.point.PointNotFoundException;
 import com.wellid.exercise.inputs.PointInput;
@@ -22,7 +22,7 @@ import java.nio.charset.StandardCharsets;
 @RestController
 @RequestMapping
 @RequiredArgsConstructor
-public class PointsController
+public class MainController
 {
     private final PointService pointService;
     private final LineComputer lineComputer;
