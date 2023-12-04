@@ -70,7 +70,7 @@ public class MainController
         @PathVariable("y") Integer y
     ) {
         return this.pointService.getOne(x, y)
-                .orElseThrow(() -> new PointNotFoundException(String.format("(%d, %d)", x, y)));
+                .orElseThrow(() -> new PointNotFoundException(String.format("[%d, %d]", x, y)));
     }
 
     @PostMapping(value = "/point", produces = { MediaType.APPLICATION_JSON_VALUE })
