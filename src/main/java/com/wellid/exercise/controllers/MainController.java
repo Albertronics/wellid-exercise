@@ -33,6 +33,16 @@ public class MainController
         return this.pointService.getAll(pagination, sort);
     }
 
+    /**
+     * <p>
+     * This endpoint will stream the result in order to obtain the best performance possible when using large datasets.
+     * <p>
+     *
+     * @return an array of lines composed each by an array of points ([x, y]) in a JSON format.
+     *         The absence of a more structured schema is needed to reduce to a minimum the payload's size
+     *         in order to obtain the best performance possible during network transit.
+     * */
+
     @GetMapping(value = "/lines/{n}", produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<StreamingResponseBody> compute(
