@@ -1,4 +1,4 @@
-package com.wellid.exercise.exceptions.point;
+package com.wellid.exercise.exceptions;
 
 import com.wellid.exercise.exceptions.config.AppError;
 import com.wellid.exercise.exceptions.config.AppErrorCode;

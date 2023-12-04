@@ -1,8 +1,9 @@
 package com.wellid.exercise.controllers;
 
+import com.wellid.exercise.exceptions.InvalidLinesValueException;
 import com.wellid.exercise.models.PaginationPayload;
 import com.wellid.exercise.entities.PointEntity;
-import com.wellid.exercise.exceptions.point.PointNotFoundException;
+import com.wellid.exercise.exceptions.PointNotFoundException;
 import com.wellid.exercise.inputs.PointInput;
 import com.wellid.exercise.services.LineComputer;
 import com.wellid.exercise.services.PointService;
@@ -46,8 +47,12 @@ public class MainController
     @GetMapping(value = "/lines/{n}", produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<StreamingResponseBody> compute(
-            @PathVariable("n") Integer n
+        @PathVariable("n") Integer n
     ) {
+        if (n == null || n < 2) {
+            throw new InvalidLinesValueException();
+        }
+
         StreamingResponseBody stream = outputStream -> {
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8));
             writer.write("[");
