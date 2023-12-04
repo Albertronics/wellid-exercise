@@ -1,4 +1,4 @@
-package com.wellid.exercise.modules.point.models.inputs;
+package com.wellid.exercise.inputs;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotNull;

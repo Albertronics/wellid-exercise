@@ -1,4 +1,4 @@
-package com.wellid.exercise.modules.point.entities;
+package com.wellid.exercise.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

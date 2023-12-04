@@ -1,9 +1,9 @@
-package com.wellid.exercise.modules.point.services;
+package com.wellid.exercise.services;
 
 import com.wellid.exercise.common.PaginationPayload;
-import com.wellid.exercise.modules.point.entities.PointEntity;
-import com.wellid.exercise.modules.point.models.inputs.PointInput;
-import com.wellid.exercise.modules.point.repositories.PointRepository;
+import com.wellid.exercise.entities.PointEntity;
+import com.wellid.exercise.inputs.PointInput;
+import com.wellid.exercise.repositories.PointRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
